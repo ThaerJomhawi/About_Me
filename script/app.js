@@ -1,9 +1,12 @@
 'use strict';
+
 var score = 0;
 let userName = prompt('Welcome to my page please enter your Name');
 alert('Welcome again (' + userName + ') to my page I will ask you some questions about myself and you will answer by yes or no');
 
 //First question
+
+function firstQ(){
 let myName = prompt('My name is Thaer?');
 if (myName.toLowerCase() === 'yes' || myName.toLowerCase() === 'y') {
   alert('well done. yes my name is Thaer');
@@ -16,10 +19,11 @@ else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
 
 }
 else { alert(' you should answer by yes or no'); }
-
+}
+firstQ();
 
 //Second question
-
+function secondQ(){
 let unMaj = prompt('Do you think I studied software development in the university ?');
 
 if (unMaj.toLowerCase() === 'yes' || unMaj.toLowerCase() === 'y') {
@@ -33,6 +37,8 @@ else if (unMaj.toLowerCase() === 'no' || unMaj.toLowerCase() === 'n') {
 
 }
 else { alert(' you should answer by yes or no'); }
+}
+secondQ();
 
 //Third question
 
