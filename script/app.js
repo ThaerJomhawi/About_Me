@@ -1,9 +1,12 @@
 'use strict';
+
 var score = 0;
 let userName = prompt('Welcome to my page please enter your Name');
 alert('Welcome again (' + userName + ') to my page I will ask you some questions about myself and you will answer by yes or no');
 
 //First question
+
+function firstQ(){
 let myName = prompt('My name is Thaer?');
 if (myName.toLowerCase() === 'yes' || myName.toLowerCase() === 'y') {
   alert('well done. yes my name is Thaer');
@@ -16,10 +19,11 @@ else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
 
 }
 else { alert(' you should answer by yes or no'); }
-
+}
+firstQ();
 
 //Second question
-
+function secondQ(){
 let unMaj = prompt('Do you think I studied software development in the university ?');
 
 if (unMaj.toLowerCase() === 'yes' || unMaj.toLowerCase() === 'y') {
@@ -33,9 +37,11 @@ else if (unMaj.toLowerCase() === 'no' || unMaj.toLowerCase() === 'n') {
 
 }
 else { alert(' you should answer by yes or no'); }
+}
+secondQ();
 
 //Third question
-
+function thirdQ(){
 let favMeal = prompt('My favorite meal is Mansaf?');
 
 if (favMeal.toLowerCase() === 'yes' || favMeal.toLowerCase() === 'y') {
@@ -49,9 +55,11 @@ else if (favMeal.toLowerCase() === 'no' || favMeal.toLowerCase() === 'n') { aler
 
 else { alert('you should answer by yes or no'); }
 
+}
+thirdQ();
 
 // forth question
-
+function fourthQ(){
 let favColor = prompt('My favorite color is Grey?');
 if (favColor.toLowerCase() === 'yes' || favColor.toLowerCase() === 'y') {
   alert('thats correct');
@@ -65,10 +73,12 @@ if (favColor.toLowerCase() === 'yes' || favColor.toLowerCase() === 'y') {
 else {
   alert('sorry you should answer by yes or no');
 }
+}
+fourthQ();
 
 
 //Fifth question
-
+function fifthQ(){
 let favSeries = prompt('Is Game of Thrones my favorite Series?');
 if (favSeries.toLowerCase() === 'yes' || favSeries.toLowerCase() === 'y') {
   alert('thats correct, you should watch it ');
@@ -83,9 +93,11 @@ else {
   alert('you should answer by yes or no');
 
 }
+}
+fifthQ();
 
 //Sixth question 
-
+function sixthQ(){
 for (let i = 0; i < 4; i++) {
   let myAge = prompt(' Can you guess my age , Hint:( between 15-50 ) ? ');
   if (myAge > 30) {
@@ -106,8 +118,12 @@ for (let i = 0; i < 4; i++) {
   }
   if (i == 3) { alert(' I am 26 years old , you can get me a gift in 04/may on my 27th birthday 😜 !!'); }
 }
+}
+sixthQ();
 
 // Seventh Question 
+function seventhQ(){
+
 let favPlace = ['irbid', 'wadi rum', 'um qais', 'amman', 'dead sea'];
 for (let x = 0; x < 6; x++) {
   let guessPlace = prompt('Can you guess my favorite place in jordan? \n Please type a location name in jordan').toLowerCase();
@@ -129,7 +145,8 @@ for (let x = 0; x < 6; x++) {
   if (x == 5) { alert('My favorate places are [irbid, wadi rum , um qais ,amman, dead sea]') };
 
 }
-
+}
+seventhQ();
 
 alert(`Thank you ${userName} Your score is = ${score}/7 `)
 console.log('your score =', score)
