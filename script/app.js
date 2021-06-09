@@ -41,7 +41,7 @@ else { alert(' you should answer by yes or no'); }
 secondQ();
 
 //Third question
-
+function thirdQ(){
 let favMeal = prompt('My favorite meal is Mansaf?');
 
 if (favMeal.toLowerCase() === 'yes' || favMeal.toLowerCase() === 'y') {
@@ -55,9 +55,11 @@ else if (favMeal.toLowerCase() === 'no' || favMeal.toLowerCase() === 'n') { aler
 
 else { alert('you should answer by yes or no'); }
 
+}
+thirdQ();
 
 // forth question
-
+function fourthQ(){
 let favColor = prompt('My favorite color is Grey?');
 if (favColor.toLowerCase() === 'yes' || favColor.toLowerCase() === 'y') {
   alert('thats correct');
@@ -71,10 +73,12 @@ if (favColor.toLowerCase() === 'yes' || favColor.toLowerCase() === 'y') {
 else {
   alert('sorry you should answer by yes or no');
 }
+}
+fourthQ();
 
 
 //Fifth question
-
+function fifthQ(){
 let favSeries = prompt('Is Game of Thrones my favorite Series?');
 if (favSeries.toLowerCase() === 'yes' || favSeries.toLowerCase() === 'y') {
   alert('thats correct, you should watch it ');
@@ -89,6 +93,8 @@ else {
   alert('you should answer by yes or no');
 
 }
+}
+fifthQ();
 
 //Sixth question 
 
