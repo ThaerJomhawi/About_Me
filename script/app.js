@@ -97,7 +97,7 @@ else {
 fifthQ();
 
 //Sixth question 
-
+function sixthQ(){
 for (let i = 0; i < 4; i++) {
   let myAge = prompt(' Can you guess my age , Hint:( between 15-50 ) ? ');
   if (myAge > 30) {
@@ -118,8 +118,12 @@ for (let i = 0; i < 4; i++) {
   }
   if (i == 3) { alert(' I am 26 years old , you can get me a gift in 04/may on my 27th birthday 😜 !!'); }
 }
+}
+sixthQ();
 
 // Seventh Question 
+function seventhQ(){
+
 let favPlace = ['irbid', 'wadi rum', 'um qais', 'amman', 'dead sea'];
 for (let x = 0; x < 6; x++) {
   let guessPlace = prompt('Can you guess my favorite place in jordan? \n Please type a location name in jordan').toLowerCase();
@@ -141,7 +145,8 @@ for (let x = 0; x < 6; x++) {
   if (x == 5) { alert('My favorate places are [irbid, wadi rum , um qais ,amman, dead sea]') };
 
 }
-
+}
+seventhQ();
 
 alert(`Thank you ${userName} Your score is = ${score}/7 `)
 console.log('your score =', score)
