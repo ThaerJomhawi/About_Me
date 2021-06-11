@@ -4,14 +4,14 @@ var score = 0;
 let userName = prompt('Welcome to my page please enter your Name');
 alert('Welcome again (' + userName + ') to my page I will ask you some questions about myself and you will answer by yes or no');
 
-//First question
+
 
 function firstQ(){
 let myName = prompt('My name is Thaer?');
 if (myName.toLowerCase() === 'yes' || myName.toLowerCase() === 'y') {
   alert('well done. yes my name is Thaer');
   score++;
-  //console.log('true');
+  
 
 }
 else if (myName.toLowerCase() === 'no' || myName.toLowerCase() === 'n') {
@@ -22,7 +22,7 @@ else { alert(' you should answer by yes or no'); }
 }
 firstQ();
 
-//Second question
+
 function secondQ(){
 let unMaj = prompt('Do you think I studied software development in the university ?');
 
@@ -33,21 +33,21 @@ if (unMaj.toLowerCase() === 'yes' || unMaj.toLowerCase() === 'y') {
 else if (unMaj.toLowerCase() === 'no' || unMaj.toLowerCase() === 'n') {
   alert('thats correct , I studied Chemical Engineering');
   score++;
-  //console.log(' true');
+  
 
 }
 else { alert(' you should answer by yes or no'); }
 }
 secondQ();
 
-//Third question
+
 function thirdQ(){
 let favMeal = prompt('My favorite meal is Mansaf?');
 
 if (favMeal.toLowerCase() === 'yes' || favMeal.toLowerCase() === 'y') {
   alert('yes this is true  ');
   score++;
-  //console.log('true');
+  
 
 }
 
@@ -58,13 +58,13 @@ else { alert('you should answer by yes or no'); }
 }
 thirdQ();
 
-// forth question
+
 function fourthQ(){
 let favColor = prompt('My favorite color is Grey?');
 if (favColor.toLowerCase() === 'yes' || favColor.toLowerCase() === 'y') {
   alert('thats correct');
   score++;
-  //console.log(' true');
+  
 
 } else if (favColor.toLowerCase() === 'no' || favColor.toLowerCase() === 'n') {
   alert('thats wrong');
@@ -77,13 +77,13 @@ else {
 fourthQ();
 
 
-//Fifth question
+
 function fifthQ(){
 let favSeries = prompt('Is Game of Thrones my favorite Series?');
 if (favSeries.toLowerCase() === 'yes' || favSeries.toLowerCase() === 'y') {
   alert('thats correct, you should watch it ');
   score++;
-  //console.log('true');
+  
 
 } else if (favSeries.toLowerCase() === 'no' || favSeries.toLowerCase() === 'n') {
   alert('thats wrong , its is my favorite ');
@@ -96,7 +96,7 @@ else {
 }
 fifthQ();
 
-//Sixth question 
+
 function sixthQ(){
 for (let i = 0; i < 4; i++) {
   let myAge = prompt(' Can you guess my age , Hint:( between 15-50 ) ? ');
@@ -121,7 +121,7 @@ for (let i = 0; i < 4; i++) {
 }
 sixthQ();
 
-// Seventh Question 
+
 function seventhQ(){
 
 let favPlace = ['irbid', 'wadi rum', 'um qais', 'amman', 'dead sea'];
